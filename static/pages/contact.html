@@ -4,37 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ქარ ჰუბი</title>
-    <link rel="stylesheet" href="../styles/contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <script src="../js/contact.js" defer></script>
 </head>
-<script src="../js/contact.js" defer></script>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="logo">Car Hub</div>
-        <nav class="nav">
-            <a href="../../index.html">Home</a>
-            <a href="../../index.html">Cars</a>
+        <nav class="nav" id="nav">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html">Cars</a>
+          <a href="../pages/contact.html">Contact</a>
         </nav>
+        <div class="burger-menu" id="burger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
     </header>
-
+    
     <div class="registration-form">
         <h2>რეგისტრაცია</h2>
         <form id="registrationForm">
             <label for="username">მომხმარებლის სახელი:</label>
-            <input type="text" id="username" name="username" required><br><br>
-    
+            <input type="text" id="username" name="username" required>
+
             <label for="email">ელ-ფოსტა:</label>
-            <input type="email" id="email" name="email" required><br><br>
-    
+            <input type="email" id="email" name="email" required>
+
             <label for="password">პაროლი:</label>
-            <input type="password" id="password" name="password" required><br><br>
-    
-            <input type="submit" value="რეგისტრაცია">
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">რეგისტრაცია</button>
         </form>
     </div>
-    
-    <footer class="footer">
+
+    <div class="faq-section">
+        <h2>ხშირად დასმული კითხვები</h2>
+
+        <div class="faq-section">
+          <h2>ხშირად დასმული კითხვები</h2>
+      
+          <div class="faq">
+              <div class="question">მეტი ინფორმაცია დაემატება თუ არა მანქანებზე? <span>+</span></div>
+              <div class="answer">კი</div>
+          </div>
+      
+          <div class="faq">
+              <div class="question">დააბდეითდება საიტი თუ არა? <span>+</span></div>
+              <div class="answer">ჯერჯერობით არა</div>
+          </div>
+      
+          <div class="faq">
+              <div class="question">შესაძლებელი იქნება ამ საიტზე ხალხის მიერ ნათქვამი მანქანების დამატება? <span>+</span></div>
+              <div class="answer">კი</div>
+          </div>
+      </div>
+      
+
+      <footer class="footer">
         <p>&copy; მეტი ინფორმაცია დაემატება მალე.</p>
         <div class="social-icons">
             <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -42,3 +71,7 @@
             <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
         </div>
     </footer>
+
+    <script src="../js/faq.js"></script>
+</body>
+</html>
